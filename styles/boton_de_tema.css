@@ -1,0 +1,39 @@
+
+
+/* ===========================================
+   4. BOTÓN DE TEMA
+   =========================================== */
+.theme-toggle {
+  position: fixed;
+  top: 100px;
+  right: 2rem;
+  z-index: var(--z-fixed);
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  border: 2px solid var(--color-gray-lighter);
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-base);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-primary);
+}
+
+.theme-toggle--active {
+  animation: spin 0.5s ease;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

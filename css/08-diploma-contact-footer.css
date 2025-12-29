@@ -1,0 +1,238 @@
+/*
+=============================================
+DIPLOMA, CONTACTO Y FOOTER
+=============================================
+*/
+
+/* DIPLOMA SECTION */
+.diploma {
+  padding: 5rem 2rem;
+  background: var(--bg-primary);
+  text-align: center;
+}
+
+.diploma .section__title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.diploma__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.diploma__image {
+  max-width: 100%;
+  width: 700px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-2xl);
+  transition: transform var(--transition-slow);
+  cursor: pointer;
+}
+
+.diploma__image:hover {
+  transform: scale(1.03);
+}
+
+.diploma__text {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 5rem 0;
+  background: var(--gradient-hero);
+  color: var(--color-white);
+}
+
+.contact__container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.contact__title {
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+
+.contact__description {
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 auto 3rem;
+  max-width: 600px;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.contact__methods {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.contact__method {
+  background: var(--bg-primary);
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  min-width: 250px;
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact__method:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow-2xl);
+}
+
+.contact__method-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  color: var(--color-white);
+  font-size: 1.75rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.contact__method-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+.contact__link {
+  color: var(--color-primary);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.contact__link:hover {
+  color: var(--color-primary-dark);
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+  background: linear-gradient(135deg, #4c1d95 0%, #5b21b6 50%, #06b6d4 100%);
+  color: var(--color-white);
+  padding: 3rem 0 2rem;
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__link {
+  color: var(--color-white);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.footer__link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-white);
+  transform: scaleX(0);
+  transition: transform var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: var(--color-primary-lighter);
+  transform: translateY(-2px);
+}
+
+.footer__link:hover::after {
+  transform: scaleX(1);
+}
+
+.footer__social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__social-link {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+  color: var(--color-white);
+  font-size: 1.25rem;
+  transition: all var(--transition-base);
+  backdrop-filter: blur(10px);
+}
+
+.footer__social-link:hover {
+  background: var(--color-white);
+  color: var(--color-primary);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: var(--shadow-xl);
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.footer__credits {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__credits i {
+  color: #ef4444;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+}

@@ -1,0 +1,215 @@
+/* ===========================================
+   17. RESPONSIVE DESIGN
+   =========================================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 100px;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    /* background: var(--bg-body); */
+    box-shadow: var(--shadow-2xl);
+    transition: left var(--transition-base);
+    z-index: var(--z-fixed);
+    padding: 6rem 2rem 2rem;
+  }
+
+  .nav--active {
+    left: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .nav__link {
+    padding: 1rem;
+    border-radius: 0;
+    border-bottom: 1px solid var(--color-gray-lighter);
+  }
+
+  .header__container {
+    padding: 0 1rem;
+  }
+
+  .hero {
+    min-height: 500px;
+    padding: 3rem 0;
+  }
+
+  .hero__stats {
+    gap: 2rem;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project--featured {
+    grid-column: span 1;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__methods {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact__method {
+    min-width: auto;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .modal__content {
+    width: 95%;
+    max-height: 90vh;
+  }
+
+  .modal__body {
+    padding: 2rem 1.5rem;
+  }
+
+  .modal__gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    padding: 1rem 0;
+  }
+
+  .hero {
+    min-height: 450px;
+    padding: 2rem 0;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero__stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about,
+  .projects,
+  .skills,
+  .diploma,
+  .contact {
+    padding: 3rem 0;
+  }
+
+  .values__list {
+    grid-template-columns: 1fr;
+  }
+
+  .projects__filters {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .projects__grid {
+    gap: 1.5rem;
+  }
+
+  .project__image-container {
+    height: 200px;
+  }
+
+  .project__content {
+    padding: 1rem;
+  }
+
+  .skills__grid {
+    gap: 1.5rem;
+  }
+
+  .skills__category {
+    padding: 1.5rem 1rem;
+  }
+
+  .skill__item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .diploma__image {
+    max-width: 100%;
+  }
+
+  .contact__method {
+    padding: 1.5rem 1rem;
+  }
+
+  .modal__body {
+    padding: 1.5rem 1rem;
+  }
+
+  .scroll-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Desktop grande */
+@media (min-width: 1400px) {
+  .header__container,
+  .projects__container,
+  .footer__container {
+    max-width: 1400px;
+  }
+
+  .hero {
+    min-height: 700px;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project--featured {
+    grid-column: span 1;
+  }
+}

@@ -1,0 +1,44 @@
+
+/* ===========================================
+   11. DIPLOMA SECTION
+   =========================================== */
+.diploma {
+  padding: 4rem 0;
+  background: var(--bg-surface);
+  text-align: center;
+}
+
+.diploma .section__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.diploma__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.diploma__image {
+  max-width: 600px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  transition: transform var(--transition-slow);
+  cursor: pointer;
+}
+
+.diploma__image:hover {
+  transform: scale(1.03);
+}
+
+.diploma__text {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}

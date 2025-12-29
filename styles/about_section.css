@@ -1,0 +1,346 @@
+
+/* ===========================================
+   9. ABOUT SECTION
+   =========================================== */
+.about {
+  padding: 5rem 0;
+  background: var(--bg-secondary);
+}
+
+.about__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about__title {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.about__intro {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  text-align: center;
+  color: var(--text-primary);
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.about__text {
+  color: var(--text-secondary);
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Quote */
+.quote {
+  background: var(--bg-card);
+  padding: 2rem;
+  margin: 2.5rem 0;
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.quote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 4rem;
+  color: var(--color-primary);
+  opacity: 0.2;
+  font-family: "Playfair Display", serif;
+}
+
+.quote__text {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  font-style: italic;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.quote__author {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  display: block;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+/* ===========================================
+     25. QUOTE CON ESTILO - MÓDULO 3
+     =========================================== */
+.quote {
+  background: linear-gradient(
+    135deg,
+    var(--color-light) 0%,
+    var(--color-lighter) 100%
+  );
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+/* Quote con entrada desde la izquierda */
+.quote {
+  animation: slideInFromLeft 0.8s ease-out;
+  position: relative;
+}
+
+/* Comillas animadas */
+.quote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 4rem;
+  color: var(--color-primary);
+  opacity: 0.2;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ===========================================
+   SECCIÓN DE VALORES MEJORADA CON IMÁGENES
+   Similar al estilo de Proyectos
+   =========================================== */
+
+/* Contenedor de valores */
+.values {
+  margin-top: 3rem;
+}
+
+.values__title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  color: var(--text-primary);
+}
+
+/* Grid de valores - Similar a proyectos */
+.values__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+/* Cada tarjeta de valor - Similar a project card */
+.values__item {
+  background: var(--bg-body);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.values__item:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-2xl);
+}
+
+/* Contenedor de imagen - Similar a project__image-container */
+.values__image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: var(--color-gray-lighter);
+}
+
+.values__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.values__item:hover .values__image {
+  transform: scale(1.15);
+}
+
+/* Overlay oscuro sobre la imagen */
+.values__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(91, 33, 182, 0.3) 0%,
+    rgba(91, 33, 182, 0.7) 100%
+  );
+  transition: opacity var(--transition-base);
+}
+
+.values__item:hover .values__overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(91, 33, 182, 0.5) 0%,
+    rgba(91, 33, 182, 0.85) 100%
+  );
+}
+
+/* Contenido del valor (texto) */
+.values__content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+  background: var(--bg-body);
+  position: relative;
+  z-index: 1;
+}
+
+/* Icono del valor */
+.values__icon {
+  font-size: 2.5rem;
+  display: block;
+  margin: 0 auto;
+  transition: transform var(--transition-base);
+}
+
+.values__item:hover .values__icon {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* Título del valor */
+.values__content strong {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  transition: color var(--transition-base);
+}
+
+.values__item:hover .values__content strong {
+  color: var(--color-primary);
+}
+
+/* Descripción del valor */
+.values__content span:last-child {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+/* ===========================================
+   TEMA OSCURO PARA VALORES
+   =========================================== */
+
+[data-theme="dark"] .values__overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 182, 212, 0.3) 0%,
+    rgba(6, 182, 212, 0.7) 100%
+  );
+}
+
+[data-theme="dark"] .values__item:hover .values__overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 182, 212, 0.5) 0%,
+    rgba(6, 182, 212, 0.85) 100%
+  );
+}
+
+/* ===========================================
+   ANIMACIONES ADICIONALES
+   =========================================== */
+
+/* Animación del icono en hover */
+@keyframes iconBounce {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+
+.values__item:hover .values__icon {
+  animation: iconBounce 0.6s ease-in-out;
+}
+
+/* Efecto de brillo en la imagen */
+@keyframes imageShine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.values__image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.values__item:hover .values__image-container::after {
+  animation: imageShine 0.8s;
+}
+
+/* ===========================================
+   MEJORAS DE ACCESIBILIDAD
+   =========================================== */
+
+.values__item:focus-within {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.values__item:focus-within .values__icon {
+  transform: scale(1.2);
+}
+
+/* Reduce motion para usuarios con preferencias */
+@media (prefers-reduced-motion: reduce) {
+  .values__item,
+  .values__image,
+  .values__icon,
+  .values__overlay {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .values__item:hover .values__image {
+    transform: scale(1.05);
+  }
+
+  .values__item:hover .values__icon {
+    animation: none;
+    transform: scale(1.1);
+  }
+}

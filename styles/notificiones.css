@@ -1,0 +1,47 @@
+/* ===========================================
+   17. NOTIFICACIONES
+   =========================================== */
+.notification {
+  position: fixed;
+  top: 100px;
+  right: -400px;
+  background: var(--bg-card);
+  padding: 1.25rem 1.75rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-2xl);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: var(--z-tooltip);
+  transition: right var(--transition-base);
+  max-width: 400px;
+}
+
+.notification--visible {
+  right: 2rem;
+}
+
+.notification i {
+  font-size: 1.5rem;
+}
+
+.notification--success {
+  border-left: 4px solid var(--color-success);
+}
+
+.notification--success i {
+  color: var(--color-success);
+}
+
+.notification--error {
+  border-left: 4px solid var(--color-error);
+}
+
+.notification--error i {
+  color: var(--color-error);
+}
+
+.notification span {
+  color: var(--text-primary);
+  font-weight: 500;
+}

@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dino Iván Pérez Vásquez - Portfolio Profesional</title>
+  <meta name="description"
+    content="Portfolio profesional de Dino Iván Pérez Vásquez. Ingeniero de Software especializado en desarrollo web y móvil con React, Angular, Flutter, Java Spring Boot y más." />
+  <meta name="keywords" content="desarrollador, software, react, angular, java, spring boot, portfolio, ingeniero" />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Dino Iván Pérez Vásquez - Ingeniero de Software" />
+  <meta property="og:description" content="Portfolio profesional de desarrollo web y móvil" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;700;900&display=swap"
+    rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/tipografia.css">
+  <link rel="stylesheet" href="./styles/boton_de_tema.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/navegacion.css">
+  <link rel="stylesheet" href="./styles/menu_hamburgesa.css">
+  <link rel="stylesheet" href="./styles/hero.css">
+  <link rel="stylesheet" href="./styles/botones.css">
+  <link rel="stylesheet" href="./styles/about_section.css">
+  <link rel="stylesheet" href="./styles/project_section.css">
+  <link rel="stylesheet" href="./styles/skills_section.css">
+  <link rel="stylesheet" href="./styles/diploma_section.css">
+  <link rel="stylesheet" href="./styles/contact_section.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/responsive_design.css">
+  <link rel="stylesheet" href="./styles/scroll_button.css">
+  <link rel="stylesheet" href="./styles/notificiones.css">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Botón de tema oscuro/claro -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Header con navegación -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <div class="header__brand">
+        <a href="#inicio" class="header__logo-link">
+          <span class="header__logo"></span>
+          <p class="header__tagline">Ingeniero de Software</p>
+        </a>
+      </div>
+
+      <!-- Menú hamburguesa -->
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#sobre-mi" class="nav__link">Sobre mí</a>
+          </li>
+          <li class="nav__item">
+            <a href="#proyectos" class="nav__link">Proyectos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#habilidades" class="nav__link">Habilidades</a>
+          </li>
+          <li class="nav__item">
+            <a href="#diploma" class="nav__link">Título</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacto" class="nav__link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+      <div class="hero__bubbles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="hero__container" data-aos="fade-up">
+        <h1 class="hero__title">Hola, soy Dino Iván Pérez Vásquez</h1>
+        <p class="hero__subtitle">Ingeniero de Software</p>
+        <p class="hero__description">
+          Con sólida formación en el desarrollo de soluciones tecnológicas eficientes, escalables y orientadas a resultados. 
+          Mi especialidad es el diseño, desarrollo e implementación de aplicaciones web y móviles, integrando tanto frontend 
+          como backend para ofrecer experiencias completas y de alto rendimiento.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#proyectos" class="button button--primary">
+            <i class="fas fa-code"></i> Ver Mis Proyectos
+          </a>
+          <a href="#contacto" class="button button--secondary">
+            <i class="fas fa-envelope"></i> Contáctame
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat" data-aos="fade-up" data-aos-delay="100">
+            <span class="stat__number" data-target="3">0</span>
+            <span class="stat__label">Años de experiencia</span>
+          </div>
+          <div class="stat" data-aos="fade-up" data-aos-delay="200">
+            <span class="stat__number" data-target="5">0</span>
+            <span class="stat__label">Proyectos personales</span>
+          </div>
+          <div class="stat" data-aos="fade-up" data-aos-delay="300">
+            <span class="stat__number" data-target="8">0</span>
+            <span class="stat__label">Tecnologías</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="about" id="sobre-mi">
+      <div class="about__container">
+        <h2 class="about__title" data-aos="fade-up">Desarrollador web y móvil</h2>
+
+        <p class="about__intro" data-aos="fade-up" data-aos-delay="100">
+          <strong>Desarrollador</strong> con sólida base en HTML, CSS, JavaScript, y experiencia construyendo interfaces 
+          modernas con React, Flutter, Angular, SAP BAS para aplicaciones empresariales en SAP UI5/Fiori y Java con Spring 
+          Boot en el Backend.
+        </p>
+
+        <p class="about__text" data-aos="fade-up" data-aos-delay="200">
+          Me apasiona crear soluciones digitales que combinan diseño atractivo, rendimiento y experiencia de usuario. 
+          Cada proyecto representa una oportunidad para innovar, aprender y aportar valor a través de la tecnología.
+        </p>
+
+        <blockquote class="quote" data-aos="fade-right" data-aos-delay="300">
+          <p class="quote__text">
+            "Detrás de cada aplicación exitosa, hay un ingeniero que nunca dejó de aprender"
+          </p>
+          <cite class="quote__author">— Mi filosofía de aprendizaje</cite>
+        </blockquote>
+
+        <!-- ===========================================
+     SECCIÓN DE VALORES MEJORADA CON IMÁGENES
+     =========================================== -->
+
+<div class="values">
+  <h3 class="values__title" data-aos="fade-up">Mis Valores</h3>
+  <ul class="values__list">
+    <!-- Valor 1: Dedicación -->
+    <li class="values__item" data-aos="zoom-in" data-aos-delay="100">
+      <div class="values__image-container">
+        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop" 
+             alt="Dedicación" 
+             class="values__image"
+             loading="lazy">
+        <div class="values__overlay"></div>
+      </div>
+      <div class="values__content">
+        <span class="values__icon">🎯</span>
+        <strong>Dedicación</strong>
+        <span>Comprometido con mi aprendizaje diario</span>
+      </div>
+    </li>
+
+    <!-- Valor 2: Curiosidad -->
+    <li class="values__item" data-aos="zoom-in" data-aos-delay="200">
+      <div class="values__image-container">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600&h=400&fit=crop" 
+             alt="Curiosidad" 
+             class="values__image"
+             loading="lazy">
+        <div class="values__overlay"></div>
+      </div>
+      <div class="values__content">
+        <span class="values__icon">📚</span>
+        <strong>Curiosidad</strong>
+        <span>Siempre explorando nuevas tecnologías</span>
+      </div>
+    </li>
+
+    <!-- Valor 3: Comunidad -->
+    <li class="values__item" data-aos="zoom-in" data-aos-delay="300">
+      <div class="values__image-container">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" 
+             alt="Comunidad" 
+             class="values__image"
+             loading="lazy">
+        <div class="values__overlay"></div>
+      </div>
+      <div class="values__content">
+        <span class="values__icon">🤝</span>
+        <strong>Comunidad</strong>
+        <span>Aprendiendo y compartiendo con otros</span>
+      </div>
+    </li>
+
+    <!-- Valor 4: Creatividad -->
+    <li class="values__item" data-aos="zoom-in" data-aos-delay="400">
+      <div class="values__image-container">
+        <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=600&h=400&fit=crop" 
+             alt="Creatividad" 
+             class="values__image"
+             loading="lazy">
+        <div class="values__overlay"></div>
+      </div>
+      <div class="values__content">
+        <span class="values__icon">💡</span>
+        <strong>Creatividad</strong>
+        <span>Buscando soluciones innovadoras</span>
+      </div>
+    </li>
+
+    <!-- Valor 5: Colaboración -->
+    <li class="values__item" data-aos="zoom-in" data-aos-delay="100">
+      <div class="values__image-container">
+        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&h=400&fit=crop" 
+             alt="Colaboración" 
+             class="values__image"
+             loading="lazy">
+        <div class="values__overlay"></div>
+      </div>
+      <div class="values__content">
+        <span class="values__icon">🤝</span>
+        <strong>Colaboración</strong>
+        <span>Trabajo en equipo con comunicación clara</span>
+      </div>
+    </li>
+
+    <!-- Valor 6: Superación -->
+    <li class="values__item" data-aos="zoom-in" data-aos-delay="200">
+      <div class="values__image-container">
+        <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=600&h=400&fit=crop" 
+             alt="Superación" 
+             class="values__image"
+             loading="lazy">
+        <div class="values__overlay"></div>
+      </div>
+      <div class="values__content">
+        <span class="values__icon">🚀</span>
+        <strong>Superación</strong>
+        <span>Mejora continua de habilidades</span>
+      </div>
+    </li>
+
+    <!-- Valor 7: Responsabilidad -->
+    <li class="values__item" data-aos="zoom-in" data-aos-delay="300">
+      <div class="values__image-container">
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=400&fit=crop" 
+             alt="Responsabilidad" 
+             class="values__image"
+             loading="lazy">
+        <div class="values__overlay"></div>
+      </div>
+      <div class="values__content">
+        <span class="values__icon">⚙️</span>
+        <strong>Responsabilidad</strong>
+        <span>Entrego resultados de calidad</span>
+      </div>
+    </li>
+
+    <!-- Valor 8: Pasión -->
+    <li class="values__item" data-aos="zoom-in" data-aos-delay="400">
+      <div class="values__image-container">
+        <img src="https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?w=600&h=400&fit=crop" 
+             alt="Pasión" 
+             class="values__image"
+             loading="lazy">
+        <div class="values__overlay"></div>
+      </div>
+      <div class="values__content">
+        <span class="values__icon">🔥</span>
+        <strong>Pasión</strong>
+        <span>Hago lo que amo con entusiasmo</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="projects" id="proyectos">
+      <div class="projects__container">
+        <h2 class="projects__title" data-aos="fade-up">Proyectos</h2>
+        <p class="projects__description" data-aos="fade-up" data-aos-delay="100">
+          Cada proyecto representa mi progreso en el desarrollo web y móvil. Desde la creación de servicios 
+          para el Backend e Interfaces y maquetación para Frontend.
+        </p>
+
+        <!-- Filtros de proyectos -->
+        <div class="projects__filters" data-aos="fade-up" data-aos-delay="200">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+        </div>
+
+        <div class="projects__grid">
+          <!-- Proyecto 1: DinoSoft -->
+          <article class="project" data-category="frontend" data-aos="fade-up" data-aos-delay="100">
+            <div class="project__image-container">
+              <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=500&fit=crop" 
+                   alt="DinoSoft Portfolio" 
+                   class="project__image"
+                   loading="lazy">
+              <div class="project__overlay">
+                <button class="project__view-btn" data-project="dinosoft">
+                  <i class="fas fa-search-plus"></i> Ver más
+                </button>
+              </div>
+            </div>
+            <div class="project__content">
+              <h3 class="project__title">DinoSoft</h3>
+              <p class="project__description">
+                Portafolio personal, diseñado para presentar mis proyectos, experiencia e información de contacto 
+                con un diseño moderno y responsivo.
+              </p>
+
+              <div class="project__technologies">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">BEM</span>
+                <span class="tag">Responsive</span>
+              </div>
+
+              <div class="project__links">
+                <a href="#" class="project__link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Ver proyecto
+                </a>
+                <a href="#" class="project__link" target="_blank">
+                  <i class="fab fa-github"></i> Ver código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: Tienda Online -->
+          <article class="project project--featured" data-category="fullstack" data-aos="fade-up" data-aos-delay="200">
+            <span class="project__badge">Destacado</span>
+            <div class="project__image-container">
+              <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&h=500&fit=crop" 
+                   alt="Tienda Online de Libros" 
+                   class="project__image"
+                   loading="lazy">
+              <div class="project__overlay">
+                <button class="project__view-btn" data-project="tienda">
+                  <i class="fas fa-search-plus"></i> Ver más
+                </button>
+              </div>
+            </div>
+            <div class="project__content">
+              <h3 class="project__title">Tienda Online para la compra de libros</h3>
+              <p class="project__description">
+                Aplicación Full Stack que permite la gestión completa de compras de libros con carrito, 
+                pasarela de pago y panel de administración.
+              </p>
+
+              <div class="project__technologies">
+                <span class="tag">Angular 17</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Java 17</span>
+                <span class="tag">MySQL</span>
+              </div>
+
+              <div class="project__links">
+                <a href="#" class="project__link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Ver proyecto
+                </a>
+                <a href="#" class="project__link" target="_blank">
+                  <i class="fab fa-github"></i> Ver código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: Buscador de Gifs -->
+          <article class="project" data-category="frontend" data-aos="fade-up" data-aos-delay="300">
+            <div class="project__image-container">
+              <img src="https://pngimg.com/uploads/google/google_PNG19644.png" 
+                   alt="Buscador de Gifs" 
+                   class="project__image"
+                   loading="lazy">
+              <div class="project__overlay">
+                <button class="project__view-btn" data-project="gifs">
+                  <i class="fas fa-search-plus"></i> Ver más
+                </button>
+              </div>
+            </div>
+            <div class="project__content">
+              <h3 class="project__title">Buscador de Gifs</h3>
+              <p class="project__description">
+                Aplicación web con React + TypeScript que consume la API de Giphy con sistema de caché 
+                inteligente y búsqueda en tiempo real.
+              </p>
+
+              <div class="project__technologies">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Vite</span>
+                <span class="tag">API</span>
+              </div>
+
+              <div class="project__links">
+                <a href="https://project-gifs.netlify.app/" class="project__link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Ver proyecto
+                </a>
+                <a href="https://github.com/Dinoivan/Buscador-de-gifs" class="project__link" target="_blank">
+                  <i class="fab fa-github"></i> Ver código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 4: ProjectFlow -->
+          <article class="project" data-category="fullstack" data-aos="fade-up" data-aos-delay="100">
+            <div class="project__image-container">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop" 
+                   alt="ProjectFlow" 
+                   class="project__image"
+                   loading="lazy">
+              <div class="project__overlay">
+                <button class="project__view-btn" data-project="projectflow">
+                  <i class="fas fa-search-plus"></i> Ver más
+                </button>
+              </div>
+            </div>
+            <div class="project__content">
+              <h3 class="project__title">ProjectFlow</h3>
+              <p class="project__description">
+                Sistema de gestión de proyectos con autenticación, asignación de tareas, control de progreso 
+                y colaboración en tiempo real.
+              </p>
+
+              <div class="project__technologies">
+                <span class="tag">React</span>
+                <span class="tag">Java 17</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">JWT</span>
+              </div>
+
+              <div class="project__links">
+                <a href="#" class="project__link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Ver proyecto
+                </a>
+                <a href="#" class="project__link" target="_blank">
+                  <i class="fab fa-github"></i> Ver código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!--Nuevo-->
+
+           <!-- Proyecto 4: ProjectFlow -->
+          <article class="project" data-category="fullstack" data-aos="fade-up" data-aos-delay="100">
+            <div class="project__image-container">
+              <img src="https://www.xamai.com/hubfs/Miniaturas-04.png" 
+                   alt="AsignacionConsultores" 
+                   class="project__image"
+                   loading="lazy">
+              <div class="project__overlay">
+                <button class="project__view-btn" data-project="AsignacionConsultores">
+                  <i class="fas fa-search-plus"></i> Ver más
+                </button>
+              </div>
+            </div>
+            <div class="project__content">
+              <h3 class="project__title">AsignacionConsultores</h3>
+              <p class="project__description">
+                Sistema de gestión de proyectos con autenticación, asignación de consultores, control de actividades.
+              </p>
+
+              <div class="project__technologies">
+                <span class="tag">React</span>
+                <span class="tag">Java 17</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">JWT</span>
+              </div>
+
+              <div class="project__links">
+                <a href="https://proyectosgr.vercel.app/" class="project__link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Ver proyecto
+                </a>
+                <a href="https://github.com/DinoIvan1120/Asignacion_Consultores_Backend" class="project__link" target="_blank">
+                  <i class="fab fa-github"></i> Ver código
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!--Nuevo-->
+
+
+          <!-- Proyecto 5: MyBloc -->
+          <article class="project" data-category="frontend" data-aos="fade-up" data-aos-delay="200">
+            <div class="project__image-container">
+              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=500&fit=crop" 
+                   alt="MyBloc Blog" 
+                   class="project__image"
+                   loading="lazy">
+              <div class="project__overlay">
+                <button class="project__view-btn" data-project="mybloc">
+                  <i class="fas fa-search-plus"></i> Ver más
+                </button>
+              </div>
+            </div>
+            <div class="project__content">
+              <h3 class="project__title">MyBloc</h3>
+              <p class="project__description">
+                Blog personal para compartir conocimientos sobre desarrollo de software con sistema de 
+                categorías, búsqueda y comentarios.
+              </p>
+
+              <div class="project__technologies">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">React</span>
+                <span class="tag">SEO</span>
+              </div>
+
+              <div class="project__links">
+                <a href="#" class="project__link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Ver proyecto
+                </a>
+                <a href="#" class="project__link" target="_blank">
+                  <i class="fab fa-github"></i> Ver código
+                </a>
+              </div>
+            </div>
+          </article>
+
+           <!-- Proyecto 5: MyBloc -->
+          <article class="project" data-category="backend" data-aos="fade-up" data-aos-delay="200">
+            <div class="project__image-container">
+              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=500&fit=crop" 
+                   alt="MyBloc Blog" 
+                   class="project__image"
+                   loading="lazy">
+              <div class="project__overlay">
+                <button class="project__view-btn" data-project="mybloc">
+                  <i class="fas fa-search-plus"></i> Ver más
+                </button>
+              </div>
+            </div>
+            <div class="project__content">
+              <h3 class="project__title">Red Social</h3>
+              <p class="project__description">
+                Simulación de red social 
+              </p>
+
+              <div class="project__technologies">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">React</span>
+                <span class="tag">SEO</span>
+              </div>
+
+              <div class="project__links">
+                <a href="#" class="project__link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Ver proyecto
+                </a>
+                <a href="#" class="project__link" target="_blank">
+                  <i class="fab fa-github"></i> Ver código
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="skills" id="habilidades">
+      <div class="skills__container">
+        <h2 class="skills__title" data-aos="fade-up">Mis Habilidades</h2>
+
+        <div class="skills__grid">
+          <!-- FRONTEND -->
+          <div class="skills__category" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="skills__subtitle">Frontend</h3>
+            <div class="skills__items">
+              <div class="skill__item">
+                <img src="./icons/html5.png" alt="HTML5" />
+                <span>HTML5</span>
+              </div>
+              <div class="skill__item">
+                <img src="./icons/css_plain_logo_icon_146573.png" alt="CSS3" />
+                <span>CSS3</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/JavaScript-logo.png" alt="JavaScript" />
+                <span>JavaScript</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/React.png" alt="React" />
+                <span>React</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/Angular.png" alt="Angular" />
+                <span>Angular</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/Flutter.png" alt="Flutter" />
+                <span>Flutter</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/SAPUI5_orange_vertical.png" alt="SAP UI5" />
+                <span>SAP UI5</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- BACKEND -->
+          <div class="skills__category" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="skills__subtitle">Backend</h3>
+            <div class="skills__items">
+              <div class="skill__item">
+                <img src="icons/Java.png" alt="Java" />
+                <span>Java</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/spring-boot-logo-icon-hd.webp" alt="Spring Boot" />
+                <span>Spring Boot</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/Python.png" alt="Python" />
+                <span>Python</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/Django.png" alt="Django" />
+                <span>Django</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/Amazon_Web_Services_Logo.svg.png" alt="AWS" />
+                <span>AWS</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/MY.png" alt="MySQL" />
+                <span>MySQL</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/Postgresql_elephant.svg.png" alt="PostgreSQL" />
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- HERRAMIENTAS -->
+          <div class="skills__category" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="skills__subtitle">Herramientas</h3>
+            <div class="skills__items">
+              <div class="skill__item">
+                <img src="icons/git_logo.png" alt="Git" />
+                <span>Git</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/GITHUB.jpg" alt="GitHub" />
+                <span>GitHub</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/Visual_studio_code.png" alt="VS Code" />
+                <span>VS Code</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/Figma.png" alt="Figma" />
+                <span>Figma</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/New-postman.webp" alt="Postman" />
+                <span>Postman</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/Intellij_Idea.png" alt="IntelliJ" />
+                <span>IntelliJ</span>
+              </div>
+              <div class="skill__item">
+                <img src="icons/BAS.png" alt="SAP BAS" />
+                <span>SAP BAS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Titulo profesional -->
+    <section id="diploma" class="diploma">
+      <h2 class="section__title" data-aos="fade-up">Título Profesional</h2>
+      <div class="diploma__content" data-aos="zoom-in" data-aos-delay="200">
+        <img src="diploma/Titulo profesional.jpeg" 
+             alt="Diploma de Ingeniero de Software" 
+             class="diploma__image"
+             loading="lazy" />
+        <p class="diploma__text">
+          Título otorgado por la Universidad Peruana de Ciencias Aplicadas - Ingeniero de Software
+        </p>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+      <div class="contact__container">
+        <h2 class="contact__title" data-aos="fade-up">¿Te gustaría conectar?</h2>
+        <p class="contact__description" data-aos="fade-up" data-aos-delay="100">
+          Siempre estoy buscando aprender de otros desarrolladores, compartir experiencias y colaborar en proyectos interesantes.
+        </p>
+
+        <div class="contact__methods">
+          <div class="contact__method" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact__method-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3 class="contact__method-title">Email</h3>
+            <a href="mailto:dino_pv_15@hotmail.com" class="contact__link">
+              dino_pv_15@hotmail.com
+            </a>
+          </div>
+
+          <div class="contact__method" data-aos="fade-up" data-aos-delay="300">
+            <div class="contact__method-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <h3 class="contact__method-title">GitHub</h3>
+            <a href="https://github.com/DinoIvan1120" target="_blank" class="contact__link">
+              @DinoIvan1120
+            </a>
+          </div>
+
+          <div class="contact__method" data-aos="fade-up" data-aos-delay="400">
+            <div class="contact__method-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <h3 class="contact__method-title">LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/dino-iv%C3%A1n-p%C3%A9rez-v%C3%A1squez-838377357/" 
+               target="_blank" 
+               class="contact__link">
+              Dino Iván Pérez
+            </a>
+          </div>
+        </div>
+
+        <a href="/curriculum/Curriculum Vitae.pdf" 
+           download 
+           class="button button--primary button--large"
+           data-aos="fade-up" 
+           data-aos-delay="500">
+          <i class="fas fa-download"></i> Descargar CV (PDF)
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <nav class="footer__nav">
+        <a href="#inicio" class="footer__link">Inicio</a>
+        <a href="#sobre-mi" class="footer__link">Sobre mí</a>
+        <a href="#proyectos" class="footer__link">Proyectos</a>
+        <a href="#habilidades" class="footer__link">Habilidades</a>
+        <a href="#contacto" class="footer__link">Contacto</a>
+      </nav>
+
+      <div class="footer__social">
+        <a href="https://github.com/DinoIvan1120" target="_blank" class="footer__social-link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dino-iv%C3%A1n-p%C3%A9rez-v%C3%A1squez-838377357/" 
+           target="_blank" 
+           class="footer__social-link" 
+           aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:dino_pv_15@hotmail.com" class="footer__social-link" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <p class="footer__copyright">
+        © 2025 Dino Iván Pérez Vásquez - Todos los derechos reservados
+      </p>
+
+      <p class="footer__credits">
+        Diseñado y desarrollado con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal para vista de proyectos -->
+  <div class="modal" id="project-modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Cerrar modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal__body">
+        <!-- El contenido se llenará dinámicamente con JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón scroll to top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <!-- JavaScript personalizado -->
+  <script src="script.js"></script>
+</body>
+
+</html>

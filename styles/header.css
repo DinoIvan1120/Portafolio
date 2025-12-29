@@ -1,0 +1,72 @@
+
+/* ===========================================
+   5. HEADER
+   =========================================== */
+.header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--color-gray-lighter);
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="dark"] .header {
+  background-color: rgba(15, 23, 42, 0.95);
+}
+
+.header--scrolled {
+  padding: 1rem 0;
+  box-shadow: var(--shadow-lg);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.header__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header__logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header__logo {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-image: url('../icons/tiger-5631003_1280.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform var(--transition-base);
+  margin-bottom: 0.5rem;
+}
+
+.header__logo:hover {
+  transform: scale(1.15) rotate(5deg);
+}
+
+.header__tagline {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+}

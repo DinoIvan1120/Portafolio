@@ -1,0 +1,52 @@
+
+/* ===========================================
+   6. NAVEGACIÓN
+   =========================================== */
+.nav__list {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav__link {
+  padding: 0.75rem 1.25rem;
+  display: block;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1.25rem;
+  right: 1.25rem;
+  height: 2px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: transform var(--transition-fast);
+}
+
+.nav__link:hover {
+  color: var(--color-primary);
+  background: var(--bg-secondary);
+}
+
+.nav__link:hover::before {
+  transform: scaleX(1);
+}
+
+.nav__link--active {
+  color: var(--color-white);
+  background: var(--gradient-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav__link--active::before {
+  display: none;
+}
