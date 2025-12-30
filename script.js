@@ -204,8 +204,8 @@ function initializeProjectModal() {
 
   // Datos de los proyectos
   const projectsData = {
-    'dinosoft': {
-      title: 'DinoSoft',
+    'portafolio': {
+      title: 'Portafolio',
       description: 'Portafolio personal diseñado para presentar mis proyectos, experiencia e información de contacto de manera profesional.',
       fullDescription: `
         <p>Este proyecto representa mi primer portafolio completo, desarrollado con tecnologías modernas y siguiendo las mejores prácticas de desarrollo web.</p>
@@ -224,8 +224,8 @@ function initializeProjectModal() {
       ],
       technologies: ['HTML5', 'CSS3', 'BEM', 'Responsive Design'],
       links: {
-        demo: '#',
-        github: '#'
+        demo: 'https://dinoivan1120.github.io/Portafolio/',
+        github: 'https://github.com/DinoIvan1120/Portafolio'
       }
     },
     'tienda': {
@@ -303,31 +303,64 @@ function initializeProjectModal() {
         github: '#'
       }
     },
-    'mybloc': {
-      title: 'MyBloc',
-      description: 'Blog personal para compartir conocimientos sobre desarrollo de software.',
+    'Mobile-First': {
+      title: 'Mobile First',
+      description: 'Landing Page desarrollada con enfoque Mobile First, priorizando usabilidad, rendimiento y accesibilidad en dispositivos móviles.',
       fullDescription: `
-        <p>Plataforma de blog diseñada para compartir artículos, tutoriales y experiencias en el mundo del desarrollo.</p>
-        <h4>Características principales:</h4>
+        <p>Landing Page informativa diseñada para presentar una plataforma de intercambio de criptomonedas, desarrollada con enfoque Mobile First para evidenciar buenas prácticas de maquetación, usabilidad, accesibilidad y rendimiento en dispositivos móvile.</p>
+         <h4>Características principales:</h4>
         <ul>
-          <li>Sistema de gestión de contenidos</li>
-          <li>Categorías y etiquetas para organización</li>
-          <li>Búsqueda de artículos avanzada</li>
-          <li>Sistema de comentarios</li>
-          <li>Optimización SEO completa</li>
-          <li>Diseño responsive y accesible</li>
+          <li>Diseño Mobile First con escalabilidad progresiva a desktop</li>
+          <li>Interfaz limpia, intuitiva y enfocada en experiencia de usuario (UX)</li>
+          <li>Estructura semántica HTML optimizada para SEO</li>
+          <li>Maquetación responsive utilizando metodología BEM</li>
+          <li>Optimización de carga y recursos para dispositivos móviles</li>
+          <li>Accesibilidad básica aplicada (contraste, navegación clara, etiquetas semánticas)</li>
+          <li>Landing orientada a conversión y presentación de contenido</li>
         </ul>
       `,
       images: [
         'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=500&fit=crop',
         'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=500&fit=crop'
       ],
-      technologies: ['HTML5', 'CSS3', 'React', 'SEO', 'BEM'],
+      technologies: ['HTML5', 'CSS3', 'BEM', 'SEO'],
       links: {
-        demo: '#',
-        github: '#'
+        demo: 'https://dinoivan1120.github.io/Landing-Page-patr-n-Mobile-First/',
+        github: 'https://github.com/DinoIvan1120/Landing-Page-patr-n-Mobile-First'
       }
-    }
+    },
+
+    'mybloc': {
+     title: 'MyBloc',
+     description: 'Blog personal desarrollado con enfoque Mobile First, priorizando usabilidad, rendimiento y accesibilidad en dispositivos móviles.',
+     fullDescription: `
+    <p>
+      <strong>MyBloc</strong> es un blog personal diseñado para compartir artículos, ideas y experiencias
+      relacionadas con el desarrollo de software, creado con el objetivo de evidenciar la aplicación de
+      buenas prácticas de maquetación, diseño Mobile First y optimización frontend.
+    </p>
+
+    <h4>Características principales:</h4>
+    <ul>
+      <li>Diseño Mobile First con adaptación progresiva a pantallas de mayor tamaño</li>
+      <li>Interfaz clara e intuitiva enfocada en la experiencia de usuario (UX)</li>
+      <li>Estructura semántica HTML optimizada para SEO</li>
+      <li>Maquetación responsive aplicando la metodología BEM</li>
+      <li>Optimización de carga y recursos para dispositivos móviles</li>
+      <li>Buenas prácticas de accesibilidad (contraste, navegación clara, etiquetas semánticas)</li>
+      <li>Espacio orientado a la presentación y difusión de contenido personal</li>
+    </ul>
+  `,
+  images: [
+    'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=500&fit=crop',
+    'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=500&fit=crop'
+  ],
+  technologies: ['HTML5', 'CSS3', 'BEM', 'SEO', 'Mobile First'],
+  links: {
+    demo: 'https://dinoivan1120.github.io/Landing-Page-patr-n-Mobile-First/',
+    github: 'https://github.com/DinoIvan1120/Landing-Page-patr-n-Mobile-First'
+  }
+}
   };
 
   // Abrir modal
