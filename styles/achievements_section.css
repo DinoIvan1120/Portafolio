@@ -1,0 +1,316 @@
+/* ==========================================
+   LOGROS DESTACADOS
+   ========================================== */
+
+.achievements {
+  padding: 100px 20px;
+  background: var(--background);
+  position: relative;
+}
+
+.achievements__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.achievements__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.achievements__subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
+
+/* Grid de logros */
+.achievements__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Tarjeta de logro */
+.achievement {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.achievement:hover::before {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.achievement:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Logro destacado (ULatinHack) */
+.achievement--featured {
+  grid-column: span 2;
+  background: linear-gradient(135deg, 
+    rgba(245, 158, 11, 0.1) 0%, 
+    rgba(217, 119, 6, 0.05) 100%);
+  border: 2px solid #f59e0b;
+}
+
+.achievement--featured .achievement__badge {
+  width: 80px;
+  height: 80px;
+  font-size: 2.5rem;
+}
+
+.achievement--featured .achievement__title {
+  font-size: 1.8rem;
+}
+
+/* Badge/Insignia */
+.achievement__badge {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.achievement__badge--gold {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+}
+
+.achievement__badge--blue {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+}
+
+.achievement__badge--purple {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  color: white;
+}
+
+.achievement__badge--green {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+}
+
+.achievement__badge--orange {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+}
+
+/* Contenido */
+.achievement__content {
+  position: relative;
+  z-index: 1;
+}
+
+.achievement__tag {
+  display: inline-block;
+  background: var(--primary-color);
+  color: black;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.achievement__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  line-height: 1.3;
+}
+
+.achievement__description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.achievement__description strong {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.achievement__institution {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.achievement__institution i {
+  font-size: 1rem;
+}
+
+.achievement__date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+}
+
+.achievement__date i {
+  color: var(--primary-color);
+}
+
+/* Detalles especiales para ULatinHack */
+.achievement__details {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.achievement__detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  background: var(--gradient-light);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.achievement__detail i {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.achievement__project {
+  background: var(--gradient-light);
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin: 1.5rem 0;
+}
+
+.achievement__project h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+}
+
+.achievement__project p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.achievement__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.achievement__link:hover {
+  gap: 0.8rem;
+  color: var(--secondary-color);
+}
+
+.achievement__stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.achievement__stats span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.achievement__stats strong {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .achievement--featured {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievements {
+    padding: 60px 20px;
+  }
+
+  .achievements__title {
+    font-size: 2rem;
+  }
+
+  .achievements__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement {
+    padding: 1.5rem;
+  }
+
+  .achievement--featured .achievement__title {
+    font-size: 1.5rem;
+  }
+
+  .achievement__details {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .achievement__detail {
+    justify-content: center;
+  }
+}
