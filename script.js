@@ -299,8 +299,8 @@ function initializeProjectModal() {
       ],
       technologies: ['React', 'Java 17', 'Spring Boot', 'PostgreSQL', 'JWT'],
       links: {
-        demo: '#',
-        github: '#'
+        demo: 'https://projectflow.duckdns.org/api/v1/swagger-ui/index.html#/',
+        github: 'https://github.com/DinoIvan1120/ProjectFlow'
       }
     },
     'Mobile-First': {
