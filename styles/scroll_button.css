@@ -35,3 +35,35 @@
 .scroll-top:active {
   transform: translateY(-2px) scale(1.05);
 }
+/* ============================================================
+   Consolidado automáticamente desde el antiguo styles.css (raíz)
+   ============================================================ */
+.scroll-top:active {
+  transform: translateY(-2px) scale(1.05);
+}
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-full);
+  background: var(--gradient-primary);
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-fixed);
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--transition-base);
+}
+.scroll-top--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+.scroll-top:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}

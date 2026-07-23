@@ -1,0 +1,47 @@
+/* Estilos para impresión */
+
+/* ============================================================
+   Consolidado automáticamente desde el antiguo styles.css (raíz)
+   ============================================================ */
+@media print {
+  .header,
+  .nav__toggle,
+  .theme-toggle,
+  .hero__actions,
+  .button,
+  .projects__filters,
+  .project__view-btn,
+  .project__overlay,
+  .contact__methods,
+  .footer__social,
+  .scroll-top,
+  .modal {
+    display: none !important;
+  }
+
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  .hero {
+    background: #f0f0f0;
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  * {
+    box-shadow: none !important;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .project,
+  .about__container,
+  .skills__container {
+    page-break-inside: avoid;
+  }
+}

@@ -45,3 +45,47 @@
   color: var(--text-primary);
   font-weight: 500;
 }
+
+/* ============================================================
+   Consolidado automáticamente desde el antiguo styles.css (raíz)
+   ============================================================ */
+.notification span {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+.notification {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100px);
+  background: var(--bg-body);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: var(--z-tooltip);
+  opacity: 0;
+  transition: all var(--transition-base);
+  max-width: 90%;
+}
+.notification--visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.notification i {
+  font-size: 1.5rem;
+}
+.notification--success {
+  border-left: 4px solid var(--color-success);
+}
+.notification--success i {
+  color: var(--color-success);
+}
+.notification--error {
+  border-left: 4px solid var(--color-error);
+}
+.notification--error i {
+  color: var(--color-error);
+}
